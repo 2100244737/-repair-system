@@ -8,6 +8,7 @@
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
     "antd-mobile": "^2.2.14",
+    "axios": "^0.19.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
@@ -35,7 +36,9 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.7.1",
     "jest-watch-typeahead": "0.3.0",
+    "js-cookie": "^2.2.0",
     "mini-css-extract-plugin": "0.5.0",
+    "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
@@ -44,6 +47,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
+    "prop-types": "^15.7.2",
     "rc-form": "^2.4.6",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
@@ -66,6 +70,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
+  "proxy": "http://demo.yaojunrong.com",
   "eslintConfig": {
     "extends": "react-app"
   },

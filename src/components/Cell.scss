@@ -1,0 +1,14 @@
+.cell-wrap {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0e0e0;
+  .cell-row1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    .row-left {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .cell-row2{}
+}

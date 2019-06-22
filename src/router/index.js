@@ -4,6 +4,7 @@ import Login from'../viows/Login'
 import Layout from'../viows/Layout'
 import Sended from'../viows/Sended' // 已派单
 import AllRecord from'../viows/AllRecord' // 所有维修记录
+import center from '../viows/CustomerCenter'
 class Container extends React.Component {
     constructor(props) {
         super(props)
@@ -19,6 +20,7 @@ class Container extends React.Component {
                              <Switch>
                                  <Route path="/layout" component={AllRecord} exact/>
                                  <Route path="/layout/sended" component={Sended} />
+                                 <Route path="/layout/customercenter" component={center} />
                              </Switch>
                          </Layout>
                      )}/>

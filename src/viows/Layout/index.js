@@ -55,6 +55,7 @@ class Layout extends React.Component {
             }
         }
         setTitle()
+        this.setTitle = setTitle;
     }
     render() {
         return (
@@ -88,7 +89,7 @@ class Layout extends React.Component {
     }
     componentWillUpdate (nextProps, nextState) {
         const pathName = nextProps.location.pathname;
-        let title = "";
+        let title = '';
         switch (pathName) {
             case "/layout":
                 title = "所有维修记录";
@@ -108,10 +109,16 @@ class Layout extends React.Component {
                     return
                 }
                 break;
+                case "/layout/done":
+                title = "已完成";
+                if(nextState.title === '已完成'){
+                    return
+                }
+                break;
         }
-        // this.setState({
-        //     title
-        // })
+        this.setState({
+            title
+        })
     }
 }
 export default Layout
