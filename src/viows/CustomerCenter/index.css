@@ -1,3 +1,54 @@
-
+.my-center {
+  min-height: 100vh;
+  background: #fff; }
+  .my-center .header {
+    position: relative;
+    background: #158ee9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 60px;
+    height: 123px; }
+    .my-center .header .avatar {
+      margin-top: 10px;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: -26px;
+      border: 4px solid #fff;
+      border-radius: 50%; }
+      .my-center .header .avatar .avatar-img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%; }
+  .my-center .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; }
+    .my-center .content::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      height: 44%;
+      width: 2px;
+      background: #e0e0e0; }
+    .my-center .content .left .num {
+      margin-top: 6px; }
+    .my-center .content .right .num {
+      margin-top: 6px; }
+  .my-center .loginOut-btn {
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    padding: 0 10px; }
 
 /*# sourceMappingURL=index.css.map */

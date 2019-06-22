@@ -4,7 +4,8 @@ import Login from'../viows/Login'
 import Layout from'../viows/Layout'
 import Sended from'../viows/Sended' // 已派单
 import AllRecord from'../viows/AllRecord' // 所有维修记录
-import center from '../viows/CustomerCenter'
+import center from '../viows/CustomerCenter'// 我的
+import TestUploadPage from '~/viows/TestUpload'; // 上传测试页面
 class Container extends React.Component {
     constructor(props) {
         super(props)
@@ -21,6 +22,9 @@ class Container extends React.Component {
                                  <Route path="/layout" component={AllRecord} exact/>
                                  <Route path="/layout/sended" component={Sended} />
                                  <Route path="/layout/customercenter" component={center} />
+                                 <Route path="/layout/testuploadpage"
+                                        component={TestUploadPage}
+                                 />
                              </Switch>
                          </Layout>
                      )}/>

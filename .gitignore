@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+./sass-cache
 # production
 /build
 .idea

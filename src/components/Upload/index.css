@@ -1,0 +1,15 @@
+.upload-wrap {
+  border: 1px solid #e0e0e0;
+  width: 100px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 6px; }
+  .upload-wrap .upload-input {
+    display: none; }
+  .upload-wrap .iconfont {
+    font-size: 30px;
+    color: #C5C5C5; }
+
+/*# sourceMappingURL=index.css.map */

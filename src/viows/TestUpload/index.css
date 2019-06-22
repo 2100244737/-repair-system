@@ -1,0 +1,13 @@
+.upload-text {
+  padding-top: 10px; }
+  .upload-text .imgs {
+    display: flex;
+    flex-wrap: wrap; }
+    .upload-text .imgs .upload-item {
+      width: 100px;
+      height: 100px;
+      border-radius: 6px;
+      margin-right: 10px;
+      padding-bottom: 10px; }
+
+/*# sourceMappingURL=index.css.map */

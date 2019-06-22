@@ -1,12 +1,27 @@
 import React from 'react';
-import { NavBar, InputItem, Button} from 'antd-mobile';
+import { NavBar, InputItem, Button, Toast} from 'antd-mobile';
 import './index.scss'
 import {createForm} from 'rc-form' // 引入表单注入插件
+import axios from 'axios'
+import Cookies from 'js-cookie'
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
         }
+    }
+    handleLogin = () => {
+        axios.post('/admin/adminUser/login', this.props.form.getFieldsValue()).then(res => {
+            if(res.data.code === 200){
+                this.props.history.push('/Layout');
+                let userObj = res.data.data;
+                console.log(userObj);
+                let userJsonStr = JSON.stringify(userObj);
+                Cookies.set('user', userJsonStr);
+            } else {
+                Toast.info(res.data.msg);
+            }
+        })
     }
     render() {
         const { getFieldProps } = this.props.form;
